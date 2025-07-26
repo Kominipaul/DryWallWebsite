@@ -1,0 +1,210 @@
+/* Base Styling */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+/* Image Slider */
+.slider-container {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.slider-before,
+.slider-after {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+}
+
+#beforeImage {
+  background-image: url("./images/HOME/20190623_095841.jpg");
+  z-index: 1;
+}
+
+#afterImage {
+  background-image: url("./images/HOME/20200221_201831.jpg");
+  z-index: 2;
+  clip-path: inset(0 0 0 50%);
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: white;
+  left: 50%;
+  cursor: ew-resize;
+  z-index: 3;
+}
+
+.slider-dot {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 9999px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-label {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+/* Carousel */
+.carousel-wrapper {
+  position: relative;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 1.5rem 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-card {
+  min-width: 300px;
+  scroll-snap-align: center;
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.card-caption {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+#prev {
+  left: 0.5rem;
+}
+
+#next {
+  right: 0.5rem;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Albums */
+.album {
+  margin-bottom: 3rem;
+}
+
+.album-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery img {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* Contact Form */
+.form {
+  max-width: 32rem;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 1rem;
+}
+
+.form input,
+.form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.form button {
+  background: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.form button:hover {
+  background: #1e40af;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+}

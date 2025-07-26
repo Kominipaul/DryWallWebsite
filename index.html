@@ -1,162 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wall Dry Company</title>
+  <link href="style.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    #beforeImage {
-      background-image: url("./images/arizona-bathroom-before-after-v0-sg3xraouq69f1.webp");
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-    }
-
-    #afterImage {
-      background-image: url("./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp");
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      inset: 0;
-      clip-path: inset(0 50% 0 0);
-      z-index: 2;
-    }
-
-    #slider {
-      cursor: ew-resize;
-      z-index: 3;
-    }
-  </style>
 </head>
+
 <body class="font-sans text-gray-800 bg-white">
 
-  <!-- NAVIGATION -->
-  <nav class="bg-white shadow sticky top-0 z-10 p-4 flex justify-center gap-8 text-lg font-semibold">
+  <!-- Navigation -->
+  <nav class="navbar">
     <a href="#home">Home</a>
     <a href="#jobs">Jobs</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- SLIDER SECTION -->
-  <section id="home" class="relative h-[85vh] overflow-hidden select-none">
-    <div id="beforeImage"></div>
-    <div id="afterImage"></div>
-    <div id="slider" class="absolute top-0 bottom-0 w-1 bg-white left-1/2">
-      <div class="w-5 h-5 bg-white border border-black rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+  <!-- Image Slider -->
+  <section id="home" class="slider-container">
+    <div id="beforeImage" class="slider-before"></div>
+    <div id="afterImage" class="slider-after"></div>
+    <div id="slider" class="slider-handle">
+      <div class="slider-dot"></div>
     </div>
-    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black px-4 py-1 rounded">← Slide to compare →</div>
+    <div class="slider-label">← Slide to compare →</div>
   </section>
 
-  <!-- JOBS CAROUSEL -->
-  <section id="jobs" class="py-16 bg-gray-100">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Work</h2>
-    <div class="relative max-w-7xl mx-auto">
-      <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white border p-2 rounded-full shadow">&#8592;</button>
-      <div id="carousel" class="flex gap-6 overflow-x-auto scroll-smooth snap-x px-6 pb-2">
-        <!-- Repeat cards -->
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 1" />
-          <div class="p-4 text-center font-semibold">Drywall Repair</div>
+  <!-- Jobs Carousel -->
+  <section id="jobs" class="section bg-gray-100">
+    <h2 class="section-title">Our Work</h2>
+    <div class="carousel-wrapper">
+      <button id="prev" class="carousel-button">&#8592;</button>
+      <div id="carousel" class="carousel-track">
+        <div class="carousel-card">
+          <img src="./images/BANKS/NationalBankKalamata/20171222_124615.jpg" alt="Job 1" />
+          <div class="card-caption">Bank Drywall Renovation</div>
         </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 2" />
-          <div class="p-4 text-center font-semibold">Ceiling Work</div>
+        <div class="carousel-card">
+          <img src="./images/RANDOMS/koroni.jpg" alt="Job 2" />
+          <div class="card-caption">Ceiling Work</div>
         </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 3" />
-          <div class="p-4 text-center font-semibold">Wall Finish</div>
-        </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 4" />
-          <div class="p-4 text-center font-semibold">Popcorn Ceiling Removal</div>
-        </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 5" />
-          <div class="p-4 text-center font-semibold">Room Redo</div>
-        </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 6" />
-          <div class="p-4 text-center font-semibold">Basement Walls</div>
-        </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 7" />
-          <div class="p-4 text-center font-semibold">Insulation</div>
-        </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 8" />
-          <div class="p-4 text-center font-semibold">Paneling</div>
-        </div>
-        <div class="min-w-[300px] snap-center bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="./images/arizona-bathroom-before-after-v0-kb426dlvq69f1.webp" class="w-full h-48 object-cover" alt="Job 9" />
-          <div class="p-4 text-center font-semibold">Archways</div>
+        <div class="carousel-card">
+          <img src="./images/Mixalis/Keep/20201123_130251.jpg" alt="Job 3" />
+          <div class="card-caption">Outside Walls</div>
         </div>
       </div>
-      <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white border p-2 rounded-full shadow">&#8594;</button>
+      <button id="next" class="carousel-button">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- Photo Albums -->
+  <section class="section">
+    <h1 class="section-title">Τα Έργα μας</h1>
+    <div class="albums">
+      <!-- Repeat Album Block -->
+      <div class="album">
+        <h2 class="album-title">German Doctor's Office</h2>
+        <div class="gallery">
+          <img src="images/GermanDoc/20170321_081958.jpg" alt="">
+          <img src="images/GermanDoc/20170321_082045.jpg" alt="">
+          <img src="images/GermanDoc/20170321_084236.jpg" alt="">
+        </div>
+      </div>
+      <div class="album">
+        <h2 class="album-title">Oval Villa</h2>
+        <div class="gallery">
+          <img src="images/OvalVilla/20170303_164447.jpg" alt="">
+          <img src="images/OvalVilla/20170122_131102.jpg" alt="">
+          <img src="images/OvalVilla/20170306_180023.jpg" alt="">
+          <img src="images/OvalVilla/20170328_132643.jpg" alt="">
+          <img src="images/OvalVilla/20170411_162928.jpg" alt="">
+        </div>
+      </div>
+      <div class="album">
+        <h2 class="album-title">Mixalis</h2>
+        <div class="gallery">
+          <img src="images/Mixalis/20201123_130251.jpg" alt="">
+          <img src="images/Mixalis/Keep/20210718_125130.jpg" alt="">
+          <img src="images/Mixalis/20201123_130424.jpg" alt="">
+          <img src="images/Mixalis/20210718_125151.jpg" alt="">
+          <img src="images/Mixalis/20210718_125246.jpg" alt="">
+        </div>
+      </div>
+      <div class="album">
+        <h2 class="album-title">Other Jobs</h2>
+        <div class="gallery">
+          <img src="images/RANDOMS/koroni.jpg" alt="">
+          <img src="images/RANDOMS/koroni2.jpg" alt="">
+          <img src="images/RANDOMS/koroni3.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Add other albums similarly... -->
     </div>
   </section>
 
   <!-- ABOUT US -->
   <section id="about" class="py-16 bg-white text-center px-6">
-    <h2 class="text-3xl font-bold mb-4">About Us</h2>
-    <p class="max-w-3xl mx-auto text-gray-600 text-lg">
-      Wall Dry Company brings your walls to life with precision and quality. Our expert team specializes in drywall, patching, and seamless finishing. With years of experience, we ensure clean, efficient, and impressive results every time.
+    <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+    <p>
+      Στη <strong>Komini Construction</strong>, διαθέτουμε πάνω από <strong>29 χρόνια
+        εμπειρίας</strong> στον χώρο της γυψοσανίδας. Εδρεύουμε στη <strong>Μεσσηνία</strong> και
+      αναλαμβάνουμε οικιακά, επαγγελματικά και δημοσια έργα
     </p>
+    <p>
+      Έχουμε κατασκεθασει καταστήματα οπως — <strong>Alpha Bank</strong>, <strong>Εθνική
+        Τράπεζα</strong>, <strong>Τράπεζα Πειραιώς</strong> — σε πόλεις όπως η <strong>Καλαμάτα</strong>, η
+      <strong>Τρίπολη</strong>, <strong>Ναύπλιο</strong> και άλλες περιοχές της Πελοποννήσου και Στερεας Ελλαδας.
+    </p>
+    <p>
+      Από το <strong>1996</strong> έχουμε εργαστεί με Ιδωτικες και Δικοσιες Υπηρεσιες
+    </p>
+
+    <h3>Τα έργα μας περιλαμβάνουν:</h3>
+    <ul>
+      <li>Το <strong>Δημοτικό Θέατρο Καλαμάτας</strong></li>
+      <li>Αμέτρητες επαγγελματικούς χώρους και δημόσια κτίρια σε όλη την Πελοπόννησο</li>
+      <li>Πολυτελείς βίλες και κατοικίες σε όλο τον Μεσσηνιακό Κόλπο</li>
+    </ul>
+
+    <p>
+      Δουλεύουμε υπεύθυνα, μερακι και με συνέπεια, με υλικά που αντέχουν στον χρόνο και τεχνικές που εξασφαλίζουν
+      ποιότητα και ασφάλεια.
+    </p>
+    <p><strong>Εγγυόμαστε αποτέλεσμα. Χωρίς καθυστερήσεις, χωρίς πρόχειρες λύσεις.</strong></p>
   </section>
 
-  <!-- CONTACT -->
+
+  <!-- Contact -->
   <section id="contact" class="py-16 bg-gray-100">
-    <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
-    <form class="max-w-xl mx-auto space-y-4 bg-white p-6 rounded shadow">
+  <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+    
+    <!-- Contact Form -->
+    <form class="space-y-4 bg-white p-6 rounded shadow">
       <input type="email" placeholder="Email" class="w-full border border-gray-300 p-2 rounded" required />
       <input type="text" placeholder="Name" class="w-full border border-gray-300 p-2 rounded" required />
       <textarea placeholder="Tell us what you want" class="w-full border border-gray-300 p-2 rounded h-40"></textarea>
       <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white p-2 rounded">Send</button>
+      <div class="text-center mt-4 text-lg">
+        <p>📞 (555) 123-4567</p>
+        <p>📧 info@walldrycompany.com</p>
+      </div>
     </form>
-    <div class="text-center mt-6 text-lg">
-      <p>📞 (555) 123-4567</p>
-      <p>📧 info@walldrycompany.com</p>
-    </div>
-  </section>
 
-  <!-- SLIDER SCRIPT -->
+    <!-- Embedded Google Map -->
+    <div class="rounded overflow-hidden shadow h-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3153355240495!2d22.112345!3d37.035678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAyJzA4LjQiTiAyMsKwMDYnNTEuMiJF!5e0!3m2!1sen!2sgr!4v1683456789012!5m2!1sen!2sgr"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- JavaScript -->
   <script>
+    // Image Slider
     const slider = document.getElementById("slider");
     const afterImage = document.getElementById("afterImage");
     const container = document.getElementById("home");
-
     let isSliding = false;
-    let currentX = container.offsetWidth / 2;
+
+    const updateSlider = (x) => {
+      slider.style.left = `${x}px`;
+      afterImage.style.clipPath = `inset(0 0 0 ${x}px)`;
+    };
+
+    window.addEventListener("load", () => {
+      const rect = container.getBoundingClientRect();
+      updateSlider(rect.width / 2);
+    });
 
     slider.addEventListener("pointerdown", (e) => {
       isSliding = true;
       container.setPointerCapture(e.pointerId);
     });
 
-    container.addEventListener("pointerup", () => {
-      isSliding = false;
-    });
+    container.addEventListener("pointerup", () => (isSliding = false));
 
     container.addEventListener("pointermove", (e) => {
       if (!isSliding) return;
       const rect = container.getBoundingClientRect();
-      currentX = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
-      requestAnimationFrame(() => {
-        slider.style.left = `${currentX}px`;
-        afterImage.style.clipPath = `inset(0 ${rect.width - currentX}px 0 0)`;
-      });
+      const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
+      updateSlider(x);
     });
-  </script>
 
-  <!-- CAROUSEL SCRIPT -->
-  <script>
+    // Carousel
     const carousel = document.getElementById("carousel");
     document.getElementById("next").onclick = () => carousel.scrollBy({ left: 340, behavior: 'smooth' });
     document.getElementById("prev").onclick = () => carousel.scrollBy({ left: -340, behavior: 'smooth' });
   </script>
-
 </body>
+
 </html>
