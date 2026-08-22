@@ -1,3 +1,18 @@
+body { overflow-x: hidden; }
+
+/* Keep the portfolio fully visible instead of making the page sideways-scroll. */
+.project-rail { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem 1.5rem; margin-right: max(1.5rem, calc((100vw - var(--max)) / 2)); overflow: visible !important; padding-right: 0 !important; }
+.project-card { min-width: 0; }
+.rail-controls { display: none; }
+
+@media (max-width: 900px) {
+  .project-rail { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+
+@media (max-width: 700px) {
+  .project-rail { display: grid !important; grid-template-columns: 1fr !important; gap: 2.5rem; margin-right: 1.25rem; overflow: visible !important; padding-right: 0 !important; }
+  .project-card { width: 100%; }
+}
 @layer reset, theme, components;
 @layer reset {
   *, *::before, *::after { box-sizing: border-box; }
