@@ -1,201 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wall Dry Company</title>
+  <meta name="description" content="Komini Construction creates durable drywall interiors, ceilings and custom finishes across Messinia and the Peloponnese." />
+  <meta name="theme-color" content="#20231f" />
+  <title>Komini Construction | Drywall & Interior Finishes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="font-sans text-gray-800 bg-white">
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#jobs">Jobs</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Image Slider -->
-  <section id="home" class="slider-container">
-    <div id="beforeImage" class="slider-before"></div>
-    <div id="afterImage" class="slider-after"></div>
-    <div id="slider" class="slider-handle">
-      <div class="slider-dot"></div>
-    </div>
-    <div class="slider-label">← Slide to compare →</div>
-  </section>
-
-  <!-- Jobs Carousel -->
-  <section id="jobs" class="section bg-gray-100">
-    <h2 class="section-title">Our Work</h2>
-    <div class="carousel-wrapper">
-      <button id="prev" class="carousel-button">&#8592;</button>
-      <div id="carousel" class="carousel-track">
-        <div class="carousel-card">
-          <img src="./images/BANKS/NationalBankKalamata/20171222_124615.jpg" alt="Job 1" />
-          <div class="card-caption">Bank Drywall Renovation</div>
-        </div>
-        <div class="carousel-card">
-          <img src="./images/RANDOMS/koroni.jpg" alt="Job 2" />
-          <div class="card-caption">Ceiling Work</div>
-        </div>
-        <div class="carousel-card">
-          <img src="./images/Mixalis/Keep/20201123_130251.jpg" alt="Job 3" />
-          <div class="card-caption">Outside Walls</div>
-        </div>
-      </div>
-      <button id="next" class="carousel-button">&#8594;</button>
-    </div>
-  </section>
-
-  <!-- Photo Albums -->
-  <section class="section">
-    <h1 class="section-title">Τα Έργα μας</h1>
-    <div class="albums">
-      <!-- Repeat Album Block -->
-      <div class="album">
-        <h2 class="album-title">German Doctor's Office</h2>
-        <div class="gallery">
-          <img src="images/GermanDoc/20170321_081958.jpg" alt="">
-          <img src="images/GermanDoc/20170321_082045.jpg" alt="">
-          <img src="images/GermanDoc/20170321_084236.jpg" alt="">
-        </div>
-      </div>
-      <div class="album">
-        <h2 class="album-title">Oval Villa</h2>
-        <div class="gallery">
-          <img src="images/OvalVilla/20170303_164447.jpg" alt="">
-          <img src="images/OvalVilla/20170122_131102.jpg" alt="">
-          <img src="images/OvalVilla/20170306_180023.jpg" alt="">
-          <img src="images/OvalVilla/20170328_132643.jpg" alt="">
-          <img src="images/OvalVilla/20170411_162928.jpg" alt="">
-        </div>
-      </div>
-      <div class="album">
-        <h2 class="album-title">Mixalis</h2>
-        <div class="gallery">
-          <img src="images/Mixalis/20201123_130251.jpg" alt="">
-          <img src="images/Mixalis/Keep/20210718_125130.jpg" alt="">
-          <img src="images/Mixalis/20201123_130424.jpg" alt="">
-          <img src="images/Mixalis/20210718_125151.jpg" alt="">
-          <img src="images/Mixalis/20210718_125246.jpg" alt="">
-        </div>
-      </div>
-      <div class="album">
-        <h2 class="album-title">Other Jobs</h2>
-        <div class="gallery">
-          <img src="images/RANDOMS/koroni.jpg" alt="">
-          <img src="images/RANDOMS/koroni2.jpg" alt="">
-          <img src="images/RANDOMS/koroni3.jpg" alt="">
-        </div>
-      </div>
-
-      <!-- Add other albums similarly... -->
-    </div>
-  </section>
-
-  <!-- ABOUT US -->
-  <section id="about" class="py-16 bg-white text-center px-6">
-    <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
-    <p>
-      Στη <strong>Komini Construction</strong>, διαθέτουμε πάνω από <strong>29 χρόνια
-        εμπειρίας</strong> στον χώρο της γυψοσανίδας. Εδρεύουμε στη <strong>Μεσσηνία</strong> και
-      αναλαμβάνουμε οικιακά, επαγγελματικά και δημοσια έργα
-    </p>
-    <p>
-      Έχουμε κατασκεθασει καταστήματα οπως — <strong>Alpha Bank</strong>, <strong>Εθνική
-        Τράπεζα</strong>, <strong>Τράπεζα Πειραιώς</strong> — σε πόλεις όπως η <strong>Καλαμάτα</strong>, η
-      <strong>Τρίπολη</strong>, <strong>Ναύπλιο</strong> και άλλες περιοχές της Πελοποννήσου και Στερεας Ελλαδας.
-    </p>
-    <p>
-      Από το <strong>1996</strong> έχουμε εργαστεί με Ιδωτικες και Δικοσιες Υπηρεσιες
-    </p>
-
-    <h3>Τα έργα μας περιλαμβάνουν:</h3>
-    <ul>
-      <li>Το <strong>Δημοτικό Θέατρο Καλαμάτας</strong></li>
-      <li>Αμέτρητες επαγγελματικούς χώρους και δημόσια κτίρια σε όλη την Πελοπόννησο</li>
-      <li>Πολυτελείς βίλες και κατοικίες σε όλο τον Μεσσηνιακό Κόλπο</li>
-    </ul>
-
-    <p>
-      Δουλεύουμε υπεύθυνα, μερακι και με συνέπεια, με υλικά που αντέχουν στον χρόνο και τεχνικές που εξασφαλίζουν
-      ποιότητα και ασφάλεια.
-    </p>
-    <p><strong>Εγγυόμαστε αποτέλεσμα. Χωρίς καθυστερήσεις, χωρίς πρόχειρες λύσεις.</strong></p>
-  </section>
-
-
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-gray-100">
-  <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
-    
-    <!-- Contact Form -->
-    <form class="space-y-4 bg-white p-6 rounded shadow">
-      <input type="email" placeholder="Email" class="w-full border border-gray-300 p-2 rounded" required />
-      <input type="text" placeholder="Name" class="w-full border border-gray-300 p-2 rounded" required />
-      <textarea placeholder="Tell us what you want" class="w-full border border-gray-300 p-2 rounded h-40"></textarea>
-      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white p-2 rounded">Send</button>
-      <div class="text-center mt-4 text-lg">
-        <p>📞 (555) 123-4567</p>
-        <p>📧 info@walldrycompany.com</p>
-      </div>
-    </form>
-
-    <!-- Embedded Google Map -->
-    <div class="rounded overflow-hidden shadow h-full">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3153355240495!2d22.112345!3d37.035678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDAyJzA4LjQiTiAyMsKwMDYnNTEuMiJF!5e0!3m2!1sen!2sgr!4v1683456789012!5m2!1sen!2sgr"
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- JavaScript -->
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Komini Construction home"><span>K</span> KOMINI <small>CONSTRUCTION</small></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><b>Menu</b></button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="#services">Services</a><a href="#work">Projects</a><a href="#about">About</a><a class="nav-cta" href="#contact">Start a project <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section id="home" class="hero"><div class="hero-copy reveal"><p class="eyebrow">Drywall / ceilings / interiors <span>Since 1996</span></p><h1>Spaces built<br /><em>to last.</em></h1><p class="hero-intro">Precise drywall craftsmanship for homes, businesses and public spaces across Messinia and the Peloponnese.</p><a class="button button-light" href="#work">Explore our work <span>↓</span></a></div><div class="hero-image"><img src="images/HOME/20200221_201831.jpg" alt="Finished drywall interior with a curved ceiling" width="1600" height="1067" fetchpriority="high" /></div><div class="hero-note"><span>01</span><p>Built with care.<br />Finished with purpose.</p></div></section>
+    <section id="services" class="services section-pad"><div class="section-heading reveal"><p class="eyebrow">What we do</p><h2>One team.<br /><em>Every layer.</em></h2></div><div class="service-list"><article class="service reveal"><span class="service-number">01</span><div><h3>Drywall systems</h3><p>Partitions, wall linings and acoustic solutions installed cleanly and built for everyday use.</p></div><span class="service-arrow">↗</span></article><article class="service reveal"><span class="service-number">02</span><div><h3>Ceilings & details</h3><p>Suspended ceilings, curves and custom forms that make the architecture feel intentional.</p></div><span class="service-arrow">↗</span></article><article class="service reveal"><span class="service-number">03</span><div><h3>Renovation work</h3><p>Reliable interior upgrades for residences, retail spaces, banks, offices and public buildings.</p></div><span class="service-arrow">↗</span></article></div></section>
+    <section id="work" class="work section-pad"><div class="work-top"><div class="section-heading reveal"><p class="eyebrow">Selected projects</p><h2>Work that<br /><em>speaks quietly.</em></h2></div><p class="work-lede reveal">From a single room to a complete commercial interior, the standard stays the same: considered details, honest materials and a finish that holds up.</p></div><div class="project-rail" id="project-rail"><article class="project-card"><img src="images/BANKS/NationalBankKalamata/20171222_124615.jpg" alt="Drywall renovation at National Bank Kalamata" width="1200" height="800" loading="lazy" sizes="(max-width: 700px) 82vw, 40vw" /><div><span>Commercial / Kalamata</span><h3>National Bank</h3></div></article><article class="project-card"><img src="images/OvalVilla/20170328_132643.jpg" alt="Custom interior drywall details at Oval Villa" width="1200" height="800" loading="lazy" sizes="(max-width: 700px) 82vw, 40vw" /><div><span>Residential / Messinia</span><h3>Oval Villa</h3></div></article><article class="project-card"><img src="images/GermanDoc/20170321_084236.jpg" alt="Interior finish at a doctor's office" width="1200" height="800" loading="lazy" sizes="(max-width: 700px) 82vw, 40vw" /><div><span>Professional / Peloponnese</span><h3>Doctor's office</h3></div></article><article class="project-card"><img src="images/RANDOMS/koroni.jpg" alt="Completed interior construction project in Koroni" width="1200" height="800" loading="lazy" sizes="(max-width: 700px) 82vw, 40vw" /><div><span>Custom work / Koroni</span><h3>Made for living</h3></div></article></div><div class="rail-controls"><button type="button" id="prev" aria-label="Previous project">←</button><button type="button" id="next" aria-label="Next project">→</button></div></section>
+    <section class="comparison section-pad"><div class="comparison-copy reveal"><p class="eyebrow">The difference is in the detail</p><h2>Before meets<br /><em>after.</em></h2><p>Good drywall work changes how a room feels. Drag across the image to see the transformation.</p></div><div class="compare" id="compare"><div class="compare-image before"></div><div class="compare-image after" id="after-image"></div><div class="compare-handle" id="compare-handle" role="slider" aria-label="Compare before and after images" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"><span>↔</span></div><span class="compare-label label-before">Before</span><span class="compare-label label-after">After</span></div></section>
+    <section id="about" class="about section-pad"><div class="about-stamp">29+<small>years<br />of craft</small></div><div class="section-heading reveal"><p class="eyebrow">The people behind the walls</p><h2>Crafted in<br /><em>Messinia.</em></h2></div><div class="about-copy reveal"><p>Komini Construction has been shaping interiors since 1996. We work with homeowners, businesses and public services to turn plans into durable, finished spaces.</p><p>Our projects include Alpha Bank, National Bank, Piraeus Bank, Kalamata Municipal Theatre, professional offices and villas throughout the Peloponnese.</p><a class="text-link" href="#contact">Talk to the team <span>↗</span></a></div></section>
+    <section class="trust"><p class="eyebrow">Built on trust</p><div class="trust-grid"><div><strong>29+</strong><span>years of experience</span></div><div><strong>3</strong><span>types of spaces</span></div><div><strong>100%</strong><span>care in the finish</span></div></div><blockquote>“We bring the same care to every project, whether it is a family home or a public building.”<cite>— Komini Construction</cite></blockquote></section>
+    <section id="contact" class="contact section-pad"><div class="contact-heading"><p class="eyebrow">Let’s build something good</p><h2>Have a project<br /><em>in mind?</em></h2><p>Tell us a little about it and we’ll get back to you.</p></div><form id="contact-form" class="contact-form"><label>Name<input name="name" type="text" autocomplete="name" placeholder="Your name" required /></label><label>Email<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></label><label>What are you building?<textarea name="message" rows="4" placeholder="A home, office, renovation..." required></textarea></label><button class="button button-dark" type="submit">Send enquiry <span>↗</span></button><p class="form-note" id="form-note">This opens your email app with the enquiry ready to send.</p></form></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span>K</span> KOMINI <small>CONSTRUCTION</small></a><div><p>Drywall and interior finishes<br />Messinia / Peloponnese / Greece</p><a href="#contact">Start a conversation ↗</a></div><p class="copyright">© 2026 Komini Construction</p></footer>
   <script>
-    // Image Slider
-    const slider = document.getElementById("slider");
-    const afterImage = document.getElementById("afterImage");
-    const container = document.getElementById("home");
-    let isSliding = false;
-
-    const updateSlider = (x) => {
-      slider.style.left = `${x}px`;
-      afterImage.style.clipPath = `inset(0 0 0 ${x}px)`;
-    };
-
-    window.addEventListener("load", () => {
-      const rect = container.getBoundingClientRect();
-      updateSlider(rect.width / 2);
-    });
-
-    slider.addEventListener("pointerdown", (e) => {
-      isSliding = true;
-      container.setPointerCapture(e.pointerId);
-    });
-
-    container.addEventListener("pointerup", () => (isSliding = false));
-
-    container.addEventListener("pointermove", (e) => {
-      if (!isSliding) return;
-      const rect = container.getBoundingClientRect();
-      const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
-      updateSlider(x);
-    });
-
-    // Carousel
-    const carousel = document.getElementById("carousel");
-    document.getElementById("next").onclick = () => carousel.scrollBy({ left: 340, behavior: 'smooth' });
-    document.getElementById("prev").onclick = () => carousel.scrollBy({ left: -340, behavior: 'smooth' });
+    const menuButton = document.querySelector('.menu-toggle'); const navigation = document.querySelector('#site-nav');
+    menuButton.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') === 'true'; menuButton.setAttribute('aria-expanded', String(!open)); navigation.classList.toggle('is-open', !open); });
+    navigation.addEventListener('click', event => { if (event.target.closest('a')) { menuButton.setAttribute('aria-expanded', 'false'); navigation.classList.remove('is-open'); } });
+    const rail = document.querySelector('#project-rail'); document.querySelector('#next').addEventListener('click', () => rail.scrollBy({ left: rail.clientWidth * .72, behavior: 'smooth' })); document.querySelector('#prev').addEventListener('click', () => rail.scrollBy({ left: -rail.clientWidth * .72, behavior: 'smooth' }));
+    const compare = document.querySelector('#compare'); const handle = document.querySelector('#compare-handle'); const afterImage = document.querySelector('#after-image');
+    const setCompare = clientX => { const bounds = compare.getBoundingClientRect(); const value = Math.max(0, Math.min(100, ((clientX - bounds.left) / bounds.width) * 100)); afterImage.style.width = `${100 - value}%`; handle.style.left = `${value}%`; handle.setAttribute('aria-valuenow', Math.round(value)); };
+    compare.addEventListener('pointerdown', event => { compare.setPointerCapture(event.pointerId); setCompare(event.clientX); }); compare.addEventListener('pointermove', event => { if (compare.hasPointerCapture(event.pointerId)) setCompare(event.clientX); });
+    handle.addEventListener('keydown', event => { const current = Number(handle.getAttribute('aria-valuenow')); if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); const next = current + (event.key === 'ArrowRight' ? 5 : -5); setCompare(compare.getBoundingClientRect().left + next / 100 * compare.clientWidth); } });
+    document.querySelector('#contact-form').addEventListener('submit', event => { event.preventDefault(); const data = new FormData(event.currentTarget); const subject = encodeURIComponent(`Project enquiry from ${data.get('name')}`); const body = encodeURIComponent(`Name: ${data.get('name')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`); window.location.href = `mailto:komini.construction@gmail.com?subject=${subject}&body=${body}`; document.querySelector('#form-note').textContent = 'Your email app should open now. Thank you.'; });
   </script>
-</body>
-
-</html>
++</body>
++</html>
